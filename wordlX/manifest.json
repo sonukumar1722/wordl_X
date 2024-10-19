@@ -1,0 +1,19 @@
+
+{
+    "manifest_version": 3,
+    "name": "wordlX",
+    "version": "1.0",
+    "description": "Define words on webpages.",
+    "permissions": [
+      "activeTab",
+      "storage", 
+      "webNavigation"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
